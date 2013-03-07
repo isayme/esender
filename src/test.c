@@ -33,7 +33,7 @@ int main()
     }
 	for (i = 0; i < 10; i++)
 	{
-		tp_add_task(tp, task, str[i%7]);
+		tp_add_task(tp, (tp_func)task, str[i%7]);
 	}
 
 	sleep(3);
